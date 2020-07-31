@@ -68,7 +68,9 @@ For the verification, the GPG command line tool is needed, which you can downloa
 or install via a package manager like `brew` on mac, `apt` on linux or `choc` on windows.
 
 To perform the verification, run for example:  
-`gpg --verify Corona-Warn-App-Data-Analysis-1.0.zip.sig Corona-Warn-App-Data-Analysis-1.0.zip`
+```
+gpg --verify Corona-Warn-App-Data-Analysis-1.0.zip.sig Corona-Warn-App-Data-Analysis-1.0.zip
+`
 
 It should print "GOOD Signature" and provide the fingerprint of my GPG key.
 
