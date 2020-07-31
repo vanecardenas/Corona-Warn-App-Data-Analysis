@@ -59,3 +59,17 @@ to request an Google API Key, go here:
 https://console.developers.google.com/flows/enableapi?apiid=maps_backend,geocoding_backend,directions_backend,distance_matrix_backend,elevation_backend&keyType=CLIENT_SIDE&pli=1
 For the heatmap to run be drawn properly in jupyterlab, please follow the installation guide of the gmaps package:
 https://jupyter-gmaps.readthedocs.io/en/latest/install.html
+
+
+## Verifying the Downloaded Release
+To ensure the integrity of the downloaded release, GPG signatures are provided for both the ZIP as well as the tar.gz archives.
+To verify the archive, download both the archive as well as the respective key.
+For the verification, the GPG command line tool is needed, which you can download [here](https://www.gnupg.org/download/)
+or install via a package manager like `brew` on mac, `apt` on linux or `choc` on windows.
+
+To perform the verification, run for example:
+`gpg --verify Corona-Warn-App-Data-Analysis-1.0.zip.sig Corona-Warn-App-Data-Analysis-1.0.zip`
+
+It should print "GOOD Signature" and provide the fingerprint of my GPG key.
+
+The GPG key is published and can be looked up [for example at this keyserver](http://keys.gnupg.net/pks/lookup?search=0xA4225256862D208E7B34DCA22B006E1221BBDEF2&fingerprint=on&op=index).
